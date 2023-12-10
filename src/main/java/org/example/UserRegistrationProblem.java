@@ -46,6 +46,13 @@ public class UserRegistrationProblem {
             throw new Exception("You Enter invalid Password");
     }
 
+    public boolean passwordValidation3(String password) throws Exception {
+        if (Pattern.matches("(?=.*?[A-Z])(?=.*?\\d)(?=.*?[!@#$%^&*_()+-])[A-Za-z\\d!@#$%^&()*+_-]{8,}", password))
+            return true;
+        else
+            throw new Exception("You Enter invalid Password");
+    }
+
 
 }
 
