@@ -7,7 +7,7 @@ public class UserRegistrationProblem {
         if (Pattern.matches("[A-Z][a-z]{2,}", firstName))
             return true;
         else
-            throw new Exception("You enter Invalid First Name");
+            throw new Exception("You enter Invalid First name as a user: ");
     }
 }
 
